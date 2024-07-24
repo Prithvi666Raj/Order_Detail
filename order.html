@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sneha Minerals Water</title>
+    <style>
+     body{
+        margin: 0;
+        background-color: aqua;
+     }   
+     h1{
+        margin: 0;
+        padding-top: 32px;
+        padding-bottom: 32px;
+     }
+     h2{
+        margin: 0;
+     }
+    form{
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+     #Raj{
+        text-align: center;
+        width: 460px;
+        border: 1px solid #ccc;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        background-color: lightsalmon;
+        zoom: 0.85;
+     }
+     .input_field{
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid #ccc;
+        font-size: 18px;
+        padding-bottom: 12px;
+        margin-bottom: 36px;
+     }
+     .butten_style{
+        background-color: blue;
+        border: none;
+        color: white;
+        font-size: 16px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        padding-right: 24px;
+
+     }
+    </style>
+</head>
+<body>
+    <div id="Raj">
+        <h1>Sneha Miniral Water</h1>
+        <h2>Order Details</h2>
+            <form>
+                <label for="Name">Name:</label>
+                <input class="input_field" type="text" pattern="[a-z A-Z]+" placeholder="Your Name" maxlength="25" required>
+                <br>
+                <label for="Phone">Phone:</label>
+                <input class="input_field" type="tel" placeholder="phone Number" maxlength="10" minlength="10" required>
+                <br>
+                <label for="date">Select Date:</label>
+                <input class="input_field" type="date" required>
+                <br>
+                <label for="time">Select Time:</label>
+                <input class="input_field" type="time" required>
+                <br>
+                <label for="cost">Cost per Tank:</label>
+                <input class="input_field" type="number" placeholder="&#8377 1000" max="1000" min="900">
+                <br>
+                <label for="number">Quantity:</label>
+                <input class="input_field" type="number" placeholder="1" max="6" min="1" required>
+                <br>
+                <label for="address">Address:</label>
+                <textarea rows="6">Address where you want your order</textarea>
+                <br> <br>
+                <button class="butten_style" type="submit">Submit</button> 
+                <button class="butten_style" type="reset">Reset</button>
+                
+            </form>
+    </div>
+</body>
+</html>
